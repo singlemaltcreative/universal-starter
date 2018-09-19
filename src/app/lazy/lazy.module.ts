@@ -7,11 +7,21 @@ import {RouterModule} from '@angular/router';
 })
 export class LazyComponent {}
 
+@Component({
+    selector: 'app-lazy-view',
+    template: `<h3>i'm lazy and nested</h3>`
+  })
+  export class LazyNestedComponent {}
+
 @NgModule({
-  declarations: [LazyComponent],
+  declarations: [
+    LazyComponent,
+    LazyNestedComponent
+  ],
   imports: [
     RouterModule.forChild([
-      { path: '', component: LazyComponent, pathMatch: 'full'}
+      { path: '', component: LazyComponent, pathMatch: 'full'},
+      { path: 'nested', component: LazyNestedComponent}
     ])
   ]
 })

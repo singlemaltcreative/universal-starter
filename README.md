@@ -1,5 +1,7 @@
 # Angular Universal Starter
 
+Last tested on Node.js v10.10.0
+
 ![Angular Universal](https://angular.io/assets/images/logos/concept-icons/universal.png)
 
 A minimal Angular starter for Universal JavaScript using the [Angular CLI](https://github.com/angular/angular-cli)
